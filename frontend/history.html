@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATOPHISH- Website Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evSXBKJEiFNJhqwlq22+gMOjP9eKcAiOoGr4i7zfjAxjyIuSOxC9bIkvYGfSqvD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #212529;
+        }
+
+        td {
+            color: #495057;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .badge {
+            padding: 8px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .badge-good {
+            background-color: #28a745;
+            color: #ffffff;
+        }
+
+        .badge-bad {
+            background-color: #dc3545;
+            color: #ffffff;
+        }
+
+        .badge-suspicious {
+            background-color: #ffc107;
+            color: #212529;
+        }
+
+        .visualization {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            height: 300px;
+        }
+
+        .visualization h3 {
+            margin-bottom: 20px;
+        }
+
+        .bar-chart {
+            height: 80%;
+            width: 100%;
+            position: relative;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .bar {
+            position: absolute;
+            bottom: 0;
+            width: 8%;
+            background-color: #007bff;
+            border-radius: 5px 5px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="visualization">
+                    <h3>Last Month's Website Predictions</h3>
+                    <div class="bar-chart">
+                        <div class="bar" style="left: 10%; height: 30%;"></div>
+                        <div class="bar" style="left: 40%; height: 60%;"></div>
+                        <div class="bar" style="left: 70%; height: 10%;"></div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <span class="badge badge-good">Good: 30%</span>
+                        <span class="badge badge-suspicious">Suspicious: 60%</span>
+                        <span class="badge badge-bad">Bad: 10%</span>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-center mb-4">Website Details</h2>
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <th scope="row">DNS</th>
+                        <td id="dns1">104.20.21.37</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">URL</th>
+                        <td id="url1"><a href="#">https://www.youtube.com</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Time Visited</th>
+                        <td id="timeVisited1">2024-05-17 17:16:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Model Prediction</th>
+                        <td id="modelPrediction1" class="badge badge-good">Good</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">DNS</th>
+                        <td id="dns2">192.168.1.1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">URL</th>
+                        <td id="url2"><a href="#">https://www.yallaaa/sde.com</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Time Visited</th>
+                        <td id="timeVisited2">2024-05-17 17:18:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Model Prediction</th>
+                        <td id="modelPrediction2" class="badge badge-bad">Bad</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">DNS</th>
+                        <td id="dns3">172.16.0.1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">URL</th>
+                        <td id="url3"><a href="#">https://www.360koora.com</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Time Visited</th>
+                        <td id="timeVisited3">2024-05-17 17:20:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Model Prediction</th>
+                        <td id="modelPrediction3" class="badge badge-suspicious">Suspicious</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">DNS</th>
+                        <td id="dns4">203.0.113.0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">URL</th>
+                        <td id="url4"><a href="#">https://www.google.com</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Time Visited</th>
+                        <td id="timeVisited4">2024-05-17 17:22:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Model Prediction</th>
+                        <td id="modelPrediction4" class="badge badge-good">Good</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">DNS</th>
+                        <td id="dns4">203.0.113.0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">URL</th>
+                        <td id="url4"><a href="#">https://www.nginx.com</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Time Visited</th>
+                        <td id="timeVisited4">2024-05-17 17:22:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Model Prediction</th>
+                        <td id="modelPrediction4" class="badge badge-good">Good</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">DNS</th>
+                        <td id="dns4">203.0.113.0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">URL</th>
+                        <td id="url4"><a href="#">https://www.youtube.com</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Time Visited</th>
+                        <td id="timeVisited4">2024-05-17 17:22:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Model Prediction</th>
+                        <td id="modelPrediction4" class="badge badge-good">Good</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</body>
+
+</html>

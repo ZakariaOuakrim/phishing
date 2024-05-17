@@ -73,3 +73,4 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   classify(sender.tab.id, request);
   sendResponse({received: "result"});
 });
+

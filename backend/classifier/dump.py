@@ -29,7 +29,7 @@ def tree_to_json(tree):
             tree_json['type'] = 'leaf'
             tree_json['value'] = tree_.value[node].tolist()
         return tree_json
-
+        
     return recurse(0)
 
 

@@ -395,8 +395,7 @@ jQuery.extend( {
 		return arr == null ? -1 : indexOf.call( arr, elem, i );
 	},
 
-	// Support: Android <=4.0 only, PhantomJS 1 only
-	// push.apply(_, arraylike) throws on ancient WebKit
+
 	merge: function( first, second ) {
 		var len = +second.length,
 			j = 0,
